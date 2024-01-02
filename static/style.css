@@ -1,0 +1,143 @@
+/*SENDER의 메세지 버블*/
+.sender_message{
+    max-width:400px;
+    display:flex;
+    justify-content: flex-end;
+    margin: 5px;
+    margin-top:15px;
+}
+.sender{
+    background-color: rgb(250,228,76);
+    border-radius: 8px;
+    text-decoration-color: black;
+    max-width: 270px;
+    font-size: 13px;
+    padding: 8px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.s_time{
+    font-size:10px;
+    margin:0 5px;
+    margin-top:auto;
+}
+
+/*RECEIVER의 메세지 버블*/
+.receiver_message{
+    max-width:400px;
+    display:flex;
+    justify-content: flex-start;
+    margin:5px;
+    margin-top:5px;
+}
+.receiver_id{
+    font-size: 11px;
+    margin-bottom:3px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.receiver{
+    background-color: white;
+    border-radius: 8px;
+    text-decoration-color: black;
+    max-width: 270px;
+    font-size: 13px;
+    padding: 8px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.r_time{
+    font-size: 10px;
+    margin:0 5px;
+    margin-top: auto;
+}
+
+
+/*하나의 메신저 창*/
+.page_container{
+    width: 400px;
+    margin:10px;
+    max-height: 1000px;
+
+    display: flex;
+    float: left;
+    flex-direction: column;
+    
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+}
+.kakao{
+    background-color: rgb(189,204,221);
+
+    max-width: 400px;
+    height: 600px;
+    
+    padding: 10px;
+    overflow: auto;
+}
+.input_area{
+    background-color: white;
+    display: flex;
+    max-width:100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+}
+.text{
+    background-color: white;
+    display: flex;
+    max-width: 100%;
+    padding: 0 0 120px 0;
+    flex-grow:1;
+
+    border-style: none;
+    font-size:14px;
+    resize: none;
+}
+textarea:focus{
+    outline: none;
+}
+button{
+    justify-content: flex-end;
+    background-color: rgb(250,228,76);
+    width: 70px;
+    height: 40px;;
+    padding:10px;
+
+    border-style: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+
+/*두개의 메세지 창을 담기 위한 container*/
+.container{
+    width: max-content;
+    height: max-content;
+    overflow-x: auto;
+}
+
+/*Form*/
+form{
+    margin:10px;
+    margin-bottom: 0px;
+    max-width: 400px;
+}
+
+#userId{
+   width: 310px;
+   text-align: center; 
+   height: 20px;
+   border-color: lightgray;
+   border-radius : 5px;
+}
+
+#LoginBtn{
+    background-color: rgb(250,228,76);
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+}
